@@ -25,10 +25,13 @@ nav{
     align-items: baseline;
     #logo {
         font-size: 20pt;
+        font-weight: bold;
+        padding-left: 20px;
         color: $color-black;
     }
     a {
         text-decoration: none;
+        color: $color-black;
         align-items: center;
         text-align: center;
         padding-top: 10px;
@@ -65,7 +68,6 @@ nav{
     }
     *:nth-child(2) {
          grid-area: text;
-         text-align: right;
     }
 }
 
