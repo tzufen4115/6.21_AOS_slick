@@ -7,6 +7,11 @@
   font-family: 微軟正黑體;
 }
 
+body {
+  background-image: url(./img/bg_texture.jpg);
+  background-size: 300px;
+}
+
 nav {
   display: -ms-grid;
   display: grid;
@@ -14,25 +19,25 @@ nav {
       grid-template-columns: 20% 60% 10% 10%;
   padding: 25px 5px;
   z-index: 1;
-  background: #00000033;
+  background: #ffffff55;
   width: 100%;
   border-bottom: 1px solid #00000033;
+  -webkit-box-align: baseline;
+      -ms-flex-align: baseline;
+          align-items: baseline;
 }
 
 nav #logo {
   font-size: 20pt;
+  color: #252525;
 }
 
 nav a {
   text-decoration: none;
-  color: #252525;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
   text-align: center;
-  -webkit-box-align: baseline;
-      -ms-flex-align: baseline;
-          align-items: baseline;
   padding-top: 10px;
 }
 
@@ -62,5 +67,13 @@ nav a {
 
 #product img {
   width: 100%;
+}
+
+#product *:nth-child(1) {
+  grid-area: pic;
+}
+
+#product *:nth-child(2) {
+  grid-area: text;
 }
 /*# sourceMappingURL=style.css.map */
