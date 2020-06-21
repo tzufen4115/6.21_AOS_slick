@@ -1,0 +1,66 @@
+@charset "UTF-8";
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: 微軟正黑體;
+}
+
+nav {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 20% 60% 10% 10%;
+      grid-template-columns: 20% 60% 10% 10%;
+  padding: 25px 5px;
+  z-index: 1;
+  background: #00000033;
+  width: 100%;
+  border-bottom: 1px solid #00000033;
+}
+
+nav #logo {
+  font-size: 20pt;
+}
+
+nav a {
+  text-decoration: none;
+  color: #252525;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  -webkit-box-align: baseline;
+      -ms-flex-align: baseline;
+          align-items: baseline;
+  padding-top: 10px;
+}
+
+#banner img {
+  height: 100vh;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+#about {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[2];
+      grid-template-columns: repeat(2, 1fr);
+}
+
+#about img {
+  width: 100%;
+}
+
+#product {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[2];
+      grid-template-columns: repeat(2, 1fr);
+}
+
+#product img {
+  width: 100%;
+}
+/*# sourceMappingURL=style.css.map */

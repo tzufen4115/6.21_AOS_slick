@@ -1,0 +1,67 @@
+$color-black:#252525;
+$color-black-33:#00000033;
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 微軟正黑體;
+}
+
+nav{
+    display: grid;
+    grid-template-columns: 20% 60% 10% 10%;
+    padding: 25px 5px;
+    z-index: 1;
+    background: $color-black-33;
+    width: 100%;
+    border-bottom: 1px solid $color-black-33;
+    #logo {
+        font-size: 20pt;       
+    }
+    a {
+        text-decoration: none;
+        color: $color-black;
+        align-items: center;
+        text-align: center;
+        align-items: baseline;
+        padding-top: 10px;
+    }
+}
+
+#banner {
+    img{height: 100vh;
+        object-fit: cover;
+    }
+
+}
+
+
+
+
+@mixin section-box  {
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    img {
+        width: 100%;
+    }
+}
+
+#about {
+    @include section-box();
+}
+
+#product {
+    
+    @include section-box();
+    
+}
+
+// grid-template-areas: "text";
+//     @include section-box();
+//     *:nth-child(1) {
+//         grid-area: pic;
+//     }
+//     *:nth-child(2) {
+//          grid-area: text;
+//     }
